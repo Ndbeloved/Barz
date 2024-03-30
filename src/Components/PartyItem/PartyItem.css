@@ -1,0 +1,136 @@
+.party-item{
+    position: relative;
+    width: 100%;
+    padding: 5rem 5rem;
+}
+
+.party-item .wrapper{
+    position: relative;
+    background: #F8F8F8;
+    padding-bottom: 1.5rem;
+}
+
+.party-item .wrapper .sub-heading-wrapper{
+    width: 100%;
+    background: var(--primary-color600);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.party-item .wrapper .sub-heading-wrapper h2{
+    font-size: 20px;
+    color: #fff;
+    padding: 1rem 1rem;
+}
+
+.party-item .wrapper .sub-heading-wrapper a{
+    padding:  1rem 1rem;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.party-item .wrapper .slider-wrapper{
+    width: 100%;
+    padding: 2rem;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    display: flex;
+    gap: 1rem;
+}
+
+.party-item .wrapper .slider-wrapper::-webkit-scrollbar{
+    background: #EDCCDA;
+    height: 3px;
+}
+
+.party-item .wrapper .slider-wrapper::-webkit-scrollbar-thumb{
+    background: #6E002D;
+}
+
+.party-item .wrapper .slider-wrapper .card{
+    height: fit-content;
+    min-width: 400px;
+    background: #fff;
+    scroll-snap-align: center;
+}
+
+.party-item .wrapper .slider-wrapper .card .image-cont{
+    width: calc(100% - 2rem);
+    height: 286px;
+    overflow: hidden;
+    margin: 1rem;
+    position: relative;
+}
+
+.party-item .wrapper .slider-wrapper .card .image-cont img{
+    height: 100%;
+    width: 100%;
+}
+
+.party-item .wrapper .slider-wrapper .card .image-cont .image-classification{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 0.5rem 1rem;
+    border-radius: 7px;
+}
+
+.party-item .wrapper .slider-wrapper .card .image-cont .image-classification.cakes{
+    background: #EEC89F;
+}
+
+.party-item .wrapper .slider-wrapper .card .image-cont .image-classification.drinks{
+    background: var(--primary-color500);
+    color: #fff;
+}
+
+.party-item .wrapper .slider-wrapper .card .text-wrapper{
+    padding: 1rem;
+}
+
+.party-item .wrapper .slider-wrapper .card .text-wrapper p{
+    padding: 0.3rem 0rem ;
+}
+
+.party-item .wrapper .slider-wrapper .card .text-wrapper p.caption{
+    display: flex;
+    justify-content: space-between;
+    color: #555555;
+}
+
+/*  */
+.party-item .wrapper .slider-wrapper .card .text-wrapper p.caption span#layers{
+    color: #8F8585;
+}
+
+.party-item .wrapper .slider-wrapper .card .text-wrapper p.price{
+    font-size: 20px;
+    font-weight: 700;
+    color: #808080;
+}
+
+.party-item .wrapper .slider-wrapper .card .text-wrapper p.discount{
+    font-size: 14px;
+    color: #AAAAAA;
+}
+
+/* #FF0000 */
+.party-item .wrapper .slider-wrapper .card .text-wrapper p.discount span#discounted{
+    color: #FF0000;
+}
+
+@media only screen and (max-width: 1000px){
+    .party-item{
+        padding: 2rem 3%;
+    }
+
+    .party-item .wrapper .sub-heading-wrapper h2{
+        font-size: 20px;
+    }
+}
+/* #EEC89F cakes label */

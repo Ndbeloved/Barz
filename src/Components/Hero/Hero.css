@@ -1,0 +1,107 @@
+.hero{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+img.bg-image{
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero-text-wrapper{
+    padding: 1rem;
+    top: 10rem;
+    position: relative;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.hero-text-wrapper .text-area{
+    text-align: center;
+}
+
+.hero-text-wrapper .text-area h1{
+    font-size: 60px;
+    color: #fff;
+    padding-bottom: 1rem;
+    opacity: 0;
+}
+
+.hero-text-wrapper .text-area p{
+    font-size: 32px;
+    color: #fff;
+    opacity: 0;
+}
+
+.hero-text-wrapper .button-wrapper{
+    justify-content: center;
+    display: flex;
+    gap: 1.2rem;
+    width: 100%;
+}
+
+.hero-text-wrapper .button-wrapper a{
+    text-decoration: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 7px;
+    font-size: 18px;
+}
+
+.hero-text-wrapper .button-wrapper a.get-started{
+    color: #fff;
+    background: var(--primary-color500);
+}
+
+.hero-text-wrapper .button-wrapper a.login{
+    border: 1px solid var(--primary-color500);
+    color: var(--primary-color500);
+    transition: all .3s ease-in-out;
+}
+
+.hero-text-wrapper .button-wrapper a.login:hover{
+    background: #fff;
+    color: var(--primary-color500);
+}
+
+@media only screen and (max-width: 1000px){
+    .hero-text-wrapper .text-area h1{
+        font-size: 28px;
+        padding-bottom: 1rem;
+    }
+    .hero-text-wrapper .text-area p{
+        font-size: 18px;
+    }
+
+    .hero-text-wrapper .button-wrapper a{
+        text-decoration: none;
+        padding: 0.5rem 1.5rem;
+        border-radius: 7px;
+        font-size: 14px;
+    }
+
+    .hero-text-wrapper{
+        gap: 2rem;
+        top: 5rem;
+    }
+
+    .hero{
+        height: 100vw;
+        width: 100%;
+    }
+
+    img.bg-image{
+        height: 100%;
+        width: auto;
+    }
+}

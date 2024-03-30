@@ -1,0 +1,153 @@
+.top-planners .top-planners-wrapper .slick-list::-webkit-scrollbar{
+    background: #EDCCDA;
+    height: 3px;
+}
+
+.top-planners .top-planners-wrapper .slick-list::-webkit-scrollbar-thumb{
+    background: #6E002D;
+}
+
+
+.top-planners{
+    position: relative;
+    width: 100%;
+    padding: 2rem 5rem;
+}
+
+.top-planners .top-planners-wrapper{
+    position: relative;
+    background: #F8F8F8;
+    padding-bottom: 1.5rem;
+}
+
+.top-planners .top-planners-wrapper .sub-heading-wrapper{
+    width: 100%;
+    background: var(--primary-color600);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-planners .top-planners-wrapper .sub-heading-wrapper h2{
+    font-size: 20px;
+    color: #fff;
+    padding: 1rem 1rem;
+}
+
+.top-planners .top-planners-wrapper .sub-heading-wrapper a{
+    padding:  1rem 1rem;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-planners .top-planners-wrapper .slick-list{
+    width: 100%;
+    padding: 2rem;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    display: flex;
+    gap: 1rem;
+}
+
+.top-planners .top-planners-wrapper .slick-list .card{
+    height: fit-content;
+    min-width: 400px;
+    max-width: 400px;
+    background: #fff;
+    scroll-snap-align: center;
+}
+
+.top-planners .top-planners-wrapper .slick-list .card .image-cont{
+    width: calc(100% - 2rem);
+    height: 286px;
+    overflow: hidden;
+    margin: 1rem;
+    position: relative;
+}
+
+.top-planners .top-planners-wrapper .slick-list .card .image-cont .image-location{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    padding: 0.3rem;
+    background: #D4D4D4;
+    border-radius: 7px;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.top-planners .top-planners-wrapper .slick-list .card .image-cont .image-location p{
+    font-size: 13px;
+    color: #555555;
+}
+
+.top-planners .top-planners-wrapper .slick-list .card .image-cont .image-location img{
+    height: 16pxpx;
+    width: 16px;
+}
+
+.top-planners .top-planners-wrapper .slick-list .card .image-cont img{
+    height: 100%;
+    width: 100%;
+}
+
+.top-planners .top-planners-wrapper .slick-list .card .text-wrapper{
+    padding: 1rem;
+}
+
+.top-planners .top-planners-wrapper .slick-list .card .text-wrapper p{
+    padding: 0.3rem 0rem ;
+}
+
+.top-planners .top-planners-wrapper .slick-list .card .text-wrapper p.caption{
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    color: #555555;
+    font-weight: 700;
+}
+
+.top-planners .top-planners-wrapper .slick-list .card .text-wrapper p.caption span#layers{
+    display: flex;
+    font-weight: 500;
+    color: #8F8585;
+    font-size: 20px;
+    gap: 0.8rem;
+    align-items: center;
+}
+
+.top-planners .top-planners-wrapper .slick-list .card .text-wrapper p.caption span#layers img{
+    height: 20px;
+    width: 20px;
+}
+
+.top-planners .top-planners-wrapper .slick-list .card .text-wrapper p.desc{
+    font-size: 16px;
+    color: #808080;
+}
+
+.top-planners .top-planners-wrapper .slick-list .card .text-wrapper .tags-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem 0rem;
+    gap: 0.5rem;
+}
+
+.top-planners .top-planners-wrapper .slick-list .card .text-wrapper .tags-wrapper p{
+    padding: 0.5rem 1rem;
+    background: #555555;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+@media only screen and (max-width: 1000px){
+    .top-planners{
+        padding: 2rem 2%;
+    }
+}

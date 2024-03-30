@@ -1,0 +1,16 @@
+:root{
+  --primary-color500: #A50044;
+  --primary-color600: #370017;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url('./assets/Poppins-regular.ttf');
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
