@@ -36,13 +36,13 @@ img.bg-image{
     font-size: 60px;
     color: #fff;
     padding-bottom: 1rem;
-    opacity: 0;
+    opacity: 1;
 }
 
 .hero-text-wrapper .text-area p{
     font-size: 32px;
     color: #fff;
-    opacity: 0;
+    opacity: 1;
 }
 
 .hero-text-wrapper .button-wrapper{

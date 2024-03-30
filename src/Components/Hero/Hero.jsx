@@ -7,13 +7,14 @@ import { useEffect } from 'react'
 const Hero = () => {
   useEffect(()=>{
     gsap.fromTo('.text-area', {
-      y: 10,
+      y: 50,
       opacity: 0,
     },
     {
       y: 0,
       opacity:1,
-      stagger: 0.2,
+      stagger: 0.7,
+      duration: 1,
     })
   }, [])
 
